@@ -1,81 +1,68 @@
-# Build a Food Review website 🌮🥑
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-During this week we will meet-up in Sthlm – YAY! During those days we will practice our JavaScript and API skills a bit more. We will also practice working as a real team using GitHub. You will experience, first-hand, the issues and struggles that can occur when working together with code. 
+## Available Scripts
 
-During the session your team will be challenged to build a website that lists restaurants, reviews and information based on location – YUM 😋. 
+In the project directory, you can run:
 
-Your page will be built based on a random combination of cuisine, city, and design provided by the Technigo team on site. All data should be fetched from the [Zomato API.](https://developers.zomato.com/)  
+### `npm start`
 
-## Your team's combination: [cuisine] restaurants in [city]
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Your team has been tasked with using the Zomato API to list [cuisine] restaurants in [city]
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## How to complete this task
+### `npm test`
 
-We have a very limited time-frame for this project, so we want you to read about the Zomato API and experiment making requests to the `/search` endpoint before we meet up. This way, when you all meet in Stockholm and get assigned your cuisine, location and design, you'll be ready to get going quickly. 
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-*The following steps should be done during the meet-up:* 
+### `npm run build`
 
-### Step 1
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Each member of your team should clone (NOT FORK!) the correct repo for your team.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### Step 2
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Togeteher as a mob, do the foundations of the project together. Make sure that you have fetched from the API and presented all data on the page in a suitable HTML structure which you all agree on. You can also use one person's code from the practices as long as **everyone** understands the code. No styling is needed at this point. 
+### `npm run eject`
 
-You should now have data from at least 10 restaurants from the `/search` endpoint on your page, and include the following data: 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* The restaurant name
-* The average cost for a dinner there
-* The address of the restaurant
-* An image (you choose which image you'd like to display from the response)
-* Either the `aggregate_rating` or the `rating_text` for that restaurant
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Step 3 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Divide into pairs or groups of three and choose freely from the selection of features below. The groups will work separatley on features in their own "feature branch" and we will help you to merge this into the master branch before the demo. Of course; have communication within the group and feel free to merge and commit code when you feel that the time is right. Help each-other and share knowledge in the team is always encouraged. 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Features
+## Learn More
 
-Below are suggestions for features for your site. You're free to choose the ones which are interesting to your team to implement: 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**🎨Implement the randomly given design.**
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-You don't need to implement all sections (if there's any that is not relevant to your site) but try and copy the page look and feel and design details. Feel free to make text, logo and other things your own – it's a tribute, not an exact copy.
+### Code Splitting
 
-**💰Filter on price range** 
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Add so that your users can filter restaurants based on different price ranges. 
+### Analyzing the Bundle Size
 
-**🚀Sort on price** 
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Add so that your users can sort the resturants on price, cheap to expensive using the `average_cost_for_two` parameter. 
+### Making a Progressive Web App
 
-**💬List reviews** 
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-List the 3 latest reviews for each restaurant. 
+### Advanced Configuration
 
-**💬Filter on delivery options** 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-Make it so your users can choose to only show resturants which have delivery (`has_online_delivery`) or can be booked in advance (`has_table_booking`). 
+### Deployment
 
-**🖼Filter on reviews**
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-Make it so your users can choose to only show restaurants with good ratings.
+### `npm run build` fails to minify
 
-**📱Make the page responsive**
-
-To work on mobile, desktop or tablet. 
-
-Feel free to challenge yourself and team to come up with more or other features! This is your group project – you decided. 
-
-### Feature freeze 
-
-There's a thing called [feature freeze.](https://en.wikipedia.org/wiki/Freeze_(software_engineering)), our feature freeze will be 2 hours before the demo. That's when it's time for you to merge your feature branches into the master branch. Our teachers will have a bit of a though time, since it's guaranteed there will be conflicts in your code (which happens when the same code is edited in two different branches). So expect merge conflicts at this point!
-
-Once all the feature branches are merged into master, you're free to try and make smaller changes to your site and fix bugs - but be careful to make sure it'll be demoable. 
-
-Work as a team!  
-
-Good luck! 
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
