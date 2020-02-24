@@ -1,7 +1,7 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Slider from '@material-ui/core/Slider'
-import Button from '@material-ui/core/Button'
+// import Button from '@material-ui/core/Button'
 import './Selection.css'
 
 export const Selection = ({ priceLevel, setPriceLevel, rating, setRating }) => {

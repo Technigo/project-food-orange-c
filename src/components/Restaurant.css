@@ -1,0 +1,79 @@
+article {
+  background-color: #fff;
+  margin: 10px 0 10px 0;
+  text-align: left;
+  color: grey;
+  padding: 15px;
+}
+
+.restaurant-short img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.restaurant-short h3 {
+  color: #333;
+  margin: 5px 0 5px 0;
+}
+
+.dollarSigns {
+  display: inline;
+  margin-right: 5px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tag {
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  padding: 0 8px 0 8px;
+  height: 28px;
+}
+
+.star {
+  color: black;
+  size: 18px;
+  margin: 0 4px 0 4px;
+  align-items: ;
+}
+
+.restaurant-long {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.restaurant-long-hide {
+  max-height: 0;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.restaurant-long p {
+  font-size: 14px;
+}
+
+.restaurant-long h4 {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0 10px 0;
+  border-color: white;
+}
