@@ -11,7 +11,7 @@ export const Selection = ({ priceLevel, setPriceLevel, rating, setRating }) => {
         Price level
       </Typography>
       <Slider
-        aria-labelledby='discrete-slider'
+        aria-labelledby='range-slider'
         step={1}
         marks
         min={1}

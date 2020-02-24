@@ -24,8 +24,14 @@ export const renderCuisines = cuisineString => {
   return newCuisineString
 }
 
+const starColor = rating => {
+  return rating >= 4.5 ? 'star star-yellow' : 'star'
+}
+
 export const Restaurant = ({ resto }) => {
   const [visible, setVisible] = useState(false)
+
+  const rating = resto.user_rating.aggregate_rating
   return (
     <article
       onClick={() => {
@@ -37,8 +43,8 @@ export const Restaurant = ({ resto }) => {
         <div className='top-row'>
           <h3>{resto.name}</h3>
           <div className='tag'>
-            <p>{resto.user_rating.aggregate_rating}</p>
-            <span className='star'>&#9733;</span>
+            <p>{rating}</p>
+            <span className={starColor(rating)}>&#9733;</span>
             <p>({resto.user_rating.votes})</p>
           </div>
         </div>

@@ -7,8 +7,12 @@ export const RestaurantList = ({ restaurants, priceLevel, rating }) => {
 
   useEffect(() => {
     const restos = restaurants.filter(resto => {
-      if (resto.price_range !== priceLevel) return undefined
-      else if (resto.user_rating.aggregate_rating < rating[0] || resto.user_rating.aggregate_rating > rating[1])
+      if (
+        resto.price_range < priceLevel[0] ||
+        resto.price_range > priceLevel[1] ||
+        resto.user_rating.aggregate_rating < rating[0] ||
+        resto.user_rating.aggregate_rating > rating[1]
+      )
         return undefined
       return resto
     })

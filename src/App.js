@@ -11,7 +11,7 @@ const baseUrl = 'https://developers.zomato.com/api/v2.1'
 const App = () => {
   const [restaurants, setRestaurants] = useState([])
 
-  const [priceLevel, setPriceLevel] = useState(3)
+  const [priceLevel, setPriceLevel] = useState([1, 4])
   const [rating, setRating] = useState([1, 5])
 
   useEffect(() => {
